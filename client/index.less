@@ -1,5 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Megrim);
 body{
-
+  font-family: 'Megrim', cursive;
 }
 header{
   height: 15vh;
@@ -11,33 +12,54 @@ header{
   font-family: arial;
   letter-spacing: 0.8em;
 }
+
 #towers{
   position:relative;
   height: 70vh;
+  color: #ffffff;
+
 }
 #t1{
   width:33%;
   height: 70vh;
   left:0;
   display: inline-block;
-  background-color: red;
+  //background-color: red;
   position: absolute;
+  background-image: url("assets/sunrise.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  vertical-align:bottom;
+  bottom:0;
+
 }
 #t2{
   width:33%;
   height:70vh;
   left:33%;
   display: inline-block;
-  background-color: blue;
+  //background-color: blue;
   position: absolute;
+  background-image: url("assets/midday.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  vertical-align:bottom;
+  bottom:0;
+
 }
 #t3{
   width:33%;
   height:70vh;
   left:66%;
   display: inline-block;
-  background-color: green;
+  //background-color: green;
   position: absolute;
+  background-image: url("assets/sunset.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  vertical-align:bottom;
+  bottom:0;
+
 }
 // .towerHolder{
 //   width:90%;
@@ -49,34 +71,64 @@ header{
 // }
 
 .ring {
-  background-color: orange;
-  height:35px;
-  border-radius: 15px;
+  //background-color: orange;
+  //height:35px;
+  //border-radius: 15px;
   //width:90%;
-  margin: 5px auto;
+  margin: 0 auto;
   padding:3px;
   text-align: center;
   //position: absolute;
   z-index:10;
 }
 #towers .selected {
-  background-color: grey;
+
 }
-#1{
+.ringHolder{
+  position:absolute;
+  vertical-align:bottom;
+  bottom:35px;
+  width:100%;
+}
+div#r1{
   width: 40%;
+  background-image: url("assets/towerTop.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100px;
 }
-#2{
+div#r2{
   width: 50%;
+  background-image: url("assets/towerBG.png");
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-#3{
+div#r3{
   width: 60%;
+  background-image: url("assets/towerBG.png");
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-#4{
+div#r4{
   width: 70%;
+  background-image: url("assets/towerBG.png");
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-#5{
-  width: 80%
+div#r5{
+  width: 80%;
+  background-image: url("assets/towerBG.png");
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-#6{
+div#r6{
   Width:90%;
+  background-image: url("assets/towerBG.png");
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
