@@ -29,6 +29,8 @@ function towerSetup(){
       $('#t1').append($div);
       //debugger;
     }
+    $('#t2').addClass('empty');
+    $('#t3').addClass('empty');
 
 }
 
@@ -49,7 +51,11 @@ function manipulate(){
     }
 
     if (!$(this).hasClass('selected')){
-    //  if($('.selected').attr('id') > $(this 'div:firstchild').attr('id')) {
+    //if(($('.selected').text() < $(this).text()) || $(this).hasClass('empty')) {
+        var selectedTopSize = $('.selected').children().first().text();
+        var newTopSize = $(this).children().first().text();
+        console.log("selectedTopSize:", selectedTopSize, "newTopSize:", newTopSize);
+        if (selectedTopSize < newTopSize || newTopSize === '') {
 
         var tempId = $('.tower.selected div:first-child').attr('id');
         var tempClass = $('.tower.selected div:first-child').attr('class');
@@ -57,10 +63,11 @@ function manipulate(){
         $('.tower.selected div:first-child').remove();
         $div.addClass(tempClass).attr('id', tempId).text(tempId);
         $(this).prepend($div);
+    //    console.log((this).children);
         $('.selected').removeClass('selected');
-    //  } else {
-    //    $('.selected').removeClass('selected');
-    //  }
+    } else {
+        $('.selected').removeClass('selected');
+        }
     }
   }
 }
