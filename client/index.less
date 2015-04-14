@@ -1,19 +1,64 @@
 body{
-  color: hsla(52, 100%, 20%, 1.0);
-  background-color: #FFDC00;
-}
 
-#apollo{
-  border: 5px solid hsla(52, 100%, 20%, 1.0);
-  width: 150px;
-  height: 225px;
+}
+header{
+  height: 15vh;
 }
 
 #title{
-  position: relative;
-  top: -170px;
-  left: 200px;
-  font-family: monospace;
-  letter-spacing: 10px;
-  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: arial;
+  letter-spacing: 0.8em;
+}
+#towers{
+  position:relative;
+  height: 70vh;
+}
+#t1{
+  width:33%;
+  height: 70vh;
+  left:0;
+  display: inline-block;
+  background-color: red;
+  position: absolute;
+}
+#t2{
+  width:33%;
+  height:70vh;
+  left:33%;
+  display: inline-block;
+  background-color: blue;
+  position: absolute;
+}
+#t3{
+  width:33%;
+  height:70vh;
+  left:66%;
+  display: inline-block;
+  background-color: green;
+  position: absolute;
+}
+// .towerHolder{
+//   width:90%;
+//   margin: 0 auto;
+//   //height: 20px;
+//   //background-color: black;
+//   position:absolute;
+//   bottom: 0;
+// }
+
+.ring {
+  background-color: orange;
+  height:35px;
+  border-radius: 15px;
+  width:90%;
+  margin: 5px auto;
+  padding:3px;
+  text-align: center;
+  //position: absolute;
+  z-index:10;
+}
+#towers .selected {
+  background-color: grey;
 }
