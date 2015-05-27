@@ -1,15 +1,15 @@
 {
   "name": "front-end-prototype",
   "version": "0.0.1",
-  "homepage": "https://github.com/chyld/front-end-prototype",
-  "author": "Chyld Medford <chyld.medford@gmail.com>",
+  "homepage": "towersofhanoi.sarahjessica.london",
+  "author": "Jess Leivers",
   "license": "BSD",
   "devDependencies": {
     "bower": "^1.4.1",
     "browser-sync": "^2.6.1",
     "concurrent-transform": "^1.0.0",
     "gulp": "^3.8.11",
-    "gulp-awspublish": "^1.0.6",
+    "gulp-awspublish": "1.0.6",
     "gulp-bower": "0.0.10",
     "gulp-concat": "^2.5.2",
     "gulp-copy": "0.0.2",
